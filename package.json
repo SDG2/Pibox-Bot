@@ -1,0 +1,26 @@
+{
+    "name": "Pibox-bot",
+    "version": "0.0.1",
+    "description": "Bot para cargar ficheros al telegram de sdg2.",
+    "keywords": [
+        "Telegram bot",
+        "SDG2"
+    ],
+    "repository": "https://github.com/SDG2/Pibox-Bot",
+    "author": "Jorge Calatayud Maeso <jorge.cmaeso@ieee.org>",
+    "dependencies": {
+        "download-file": "^0.1.5",
+        "eslint": "^4.19.1",
+        "node-telegram-bot-api": "^0.30.0",
+        "telegraf": "^3.21.1"
+    },
+    "main": "index",
+    "engines": {
+        "node": ">= 0.4.1"
+    },
+    "scripts": {
+        "start": "node main.js",
+        "prepublish": "npm prune",
+        "test": "make lint && make test"
+    }
+}
